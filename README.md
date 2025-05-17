@@ -256,8 +256,8 @@ To improve query performance, we carried out the following optimization process:
 - **Initial Query Performance Analysis Using `EXPLAIN`**
     - We began by analyzing the performance of a query using the `EXPLAIN` function.
     - The query retrieved tracks based on the `artist` column, and the performance metrics were as follows:
-        - Execution time (E.T.): **10.90 ms**
-        - Planning time (P.T.): **0.14 ms**
+        - Execution time (E.T.): **11.667 ms**
+        - Planning time (P.T.): **1.318 ms**
     - Below is the **screenshot** of the `EXPLAIN` result before optimization:
       ![EXPLAIN Before Index](https://github.com/bhi112/spotify/blob/main/Before%20optimize.png)
 
@@ -270,8 +270,8 @@ To improve query performance, we carried out the following optimization process:
 
 - **Performance Analysis After Index Creation**
     - After creating the index, we ran the same query again and observed significant improvements in performance:
-        - Execution time (E.T.): **0.190 ms**
-        - Planning time (P.T.): **0.10 ms**
+        - Execution time (E.T.): **0.182 ms**
+        - Planning time (P.T.): **2.290 ms**
     - Below is the **screenshot** of the `EXPLAIN` result after index creation:
       ![EXPLAIN After Index](https://github.com/bhi112/spotify/blob/main/After%20Optimize.png)
 
