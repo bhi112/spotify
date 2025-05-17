@@ -259,7 +259,7 @@ To improve query performance, we carried out the following optimization process:
         - Execution time (E.T.): **10.90 ms**
         - Planning time (P.T.): **0.14 ms**
     - Below is the **screenshot** of the `EXPLAIN` result before optimization:
-      ![EXPLAIN Before Index](https://github.com/najirh/najirh-Spotify-Data-Analysis-using-SQL/blob/main/spotify_explain_before_index.png)
+      ![EXPLAIN Before Index](https://github.com/bhi112/spotify/blob/main/Before%20optimize.png)
 
 - **Index Creation on the `artist` Column**
     - To optimize the query performance, we created an index on the `artist` column. This ensures faster retrieval of rows where the artist is queried.
@@ -273,14 +273,8 @@ To improve query performance, we carried out the following optimization process:
         - Execution time (E.T.): **0.190 ms**
         - Planning time (P.T.): **0.10 ms**
     - Below is the **screenshot** of the `EXPLAIN` result after index creation:
-      ![EXPLAIN After Index](https://github.com/najirh/najirh-Spotify-Data-Analysis-using-SQL/blob/main/spotify_explain_after_index.png)
+      ![EXPLAIN After Index](https://github.com/bhi112/spotify/blob/main/After%20Optimize.png)
 
-- **Graphical Performance Comparison**
-    - A graph illustrating the comparison between the initial query execution time and the optimized query execution time after index creation.
-    - **Graph view** shows the significant drop in both execution and planning times:
-      ![Performance Graph](https://github.com/najirh/najirh-Spotify-Data-Analysis-using-SQL/blob/main/spotify_graphical%20view%203.png)
-      ![Performance Graph](https://github.com/najirh/najirh-Spotify-Data-Analysis-using-SQL/blob/main/spotify_graphical%20view%202.png)
-      ![Performance Graph](https://github.com/najirh/najirh-Spotify-Data-Analysis-using-SQL/blob/main/spotify_graphical%20view%201.png)
 
 This optimization shows how indexing can drastically reduce query time, improving the overall performance of our database operations in the Spotify project.
 ---
